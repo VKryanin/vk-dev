@@ -1,0 +1,67 @@
+.main {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0px;
+}
+
+.mainTitle {
+    margin: 0px 0px 30px 4px;
+    color: #64ffda;
+    font-family: 'SF Mono', monospace;
+    font-size: 14px;
+}
+
+.mainMyName {
+    text-align: start;
+    margin: 0px;
+    color: #ccd6f6;
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.mainAbout {
+    text-align: start;
+    line-height: 0.9;
+    color: #8892b0;
+    margin: 5px 0 0;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+.mainSubtitle {
+    margin: 20px 0px 0px;
+    max-width: 440px;
+    font-size: 20px;
+    text-align: start;
+}
+
+.Typewriter__wrapper {
+    display: inline-block;
+}
+
+.Typewriter__cursor {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    animation: blink 700ms infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}

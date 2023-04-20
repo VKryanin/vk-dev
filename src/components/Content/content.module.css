@@ -1,0 +1,13 @@
+.content {
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 0px 150px;
+    margin: 0px auto;
+}
+
+section {
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+}

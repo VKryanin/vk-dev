@@ -2,17 +2,56 @@
     position: fixed;
     bottom: 0;
     left: 40px;
+    z-index: 10;
+    width: 40px;
 }
 
 .sidebarList {
     padding: 0;
+    margin: 0;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.sidebarList::after {
+    content: " ";
+    background: #ccd6f6;
+    width: 1px;
+    height: 80px;
+}
+
+.sidebarItem {
+    transition: all .5s ease;
+}
+
+.sidebarItem:hover {
+    transform: translateY(-5px);
 }
 
 .sidebarPath {
     transition: all .5s ease-in;
 }
 
-.sidebarIcon:hover .sidebarPath{
+.sidebarIcon:hover .sidebarPath {
     fill: #64ffda;
+}
+
+.sidebarLink {
+    padding: 10px;
+    display: inline-block;
+}
+
+.sidebarLink:hover rect {
+    stroke: #64ffda;
+}
+
+.sidebarLink:hover path {
+    stroke: #64ffda;
+}
+
+.sidebarLink:hover line {
+    stroke: #64ffda;
 }

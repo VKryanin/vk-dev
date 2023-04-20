@@ -15,21 +15,27 @@
 }
 
 .aboutTitle {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px 0 40px;
     line-height: 1.1;
     color: #ccd6f6;
-    font-size: 32px;
-    margin: 10px 0 40px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
+    font-size: clamp(26px, 5vw, 32px);
     white-space: nowrap;
 }
 
 .aboutTitle::before {
+    position: relative;
     content: "0.";
+    bottom: 0;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 20px);
     color: #64ffda;
+    text-align: center;
     font-family: 'SF Mono', monospace;
+    line-height: 1.1;
 }
 
 .aboutTitle::after {
@@ -37,7 +43,7 @@
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #233554;
+    background-color: #ccd6f6;
 }
 
 .aboutGrid {
@@ -124,6 +130,7 @@
     margin: 0 0 15px 0;
     text-align: start;
     font-size: 20px;
+    text-align: justify;
 }
 
 .aboutSubtitle span {
@@ -169,7 +176,7 @@
 
 .aboutItem {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
 }
 

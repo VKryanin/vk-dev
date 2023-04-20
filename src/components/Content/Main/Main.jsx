@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 export function Main() {
     return (
-        <section className={style.main}>
+        <section className={style.main} id='main'>
             <h1 className={style.mainTitle}>
                 <Typewriter
                     options={{cursor: '_'}}
@@ -18,7 +18,7 @@ export function Main() {
             </h1>
             <h2 className={style.mainMyName}>Виталий Крянин</h2>
             <h3 className={style.mainAbout}>Воплощаю идеи в жизнь с помощью кода!</h3>
-            <p className={style.mainSubtitle}>Я frontend разработчик, специализирующийся на разработке веб-сервисов и приложений для пользователей.</p>
+            <p className={style.mainSubtitle}>Я frontend разработчик, специализирующийся на создании веб-сервисов и приложений.</p>
         </section>
     )
 }

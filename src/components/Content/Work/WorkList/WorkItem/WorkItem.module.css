@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .workLink {
@@ -179,7 +180,7 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 391px) {
     .workContent {
         padding: 5px;
     }
@@ -189,12 +190,13 @@
     }
 
     .workProjectName {
-        font-size: 15px;
-        line-height: .5;
+        font-size: 14px;
+        line-height: normal;
+        margin: 0 0 10px;
     }
 
     .workText {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .workTechList li {

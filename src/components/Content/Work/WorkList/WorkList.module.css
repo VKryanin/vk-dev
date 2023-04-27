@@ -2,4 +2,8 @@
     
 }
 
-
+@media (max-width: 480px) {
+    .workList {
+        margin-top: 40px;
+    }
+}

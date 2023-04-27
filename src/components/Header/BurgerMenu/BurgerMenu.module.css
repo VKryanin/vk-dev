@@ -113,6 +113,7 @@
     }
 
     .burgerMenu {
+        visibility:visible;
         position: absolute;
         top: 50%;
         right: 0px;
@@ -122,6 +123,7 @@
         background-color: #64ffda;
         transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
         transform: rotate(0deg);
+        opacity: 1;
     }
 
     .burgerMenu::before {
@@ -161,4 +163,52 @@
         transition-duration: 0.15s;
         transition-property: transform;
     }
+
+    .burgerMenuClose {
+        visibility: hidden;
+        position: relative;
+        top: 50%;
+        right: 0px;
+        width: 30px;
+        height: 2px;
+        border-radius: 4px;
+        background-color: transparent;
+        transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    .burgerMenuClose::before {
+        width: 100%;
+        transform: translate(50%, -50%) rotate(45deg);
+        transition: bottom 0.1s ease-in 0.25s,
+            transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #64ffda;
+        transition-timing-function: ease;
+        transition-duration: 0.15s;
+        transition-property: transform;
+    }
+
+    .burgerMenuClose::after {
+        width: 100%;
+        transform: translate(50%, -50%) rotate(-45deg);
+        transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #64ffda;
+        transition-timing-function: ease;
+        transition-duration: 0.15s;
+        transition-property: transform;
+    }
+
 }

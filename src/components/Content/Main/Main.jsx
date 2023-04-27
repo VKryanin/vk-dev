@@ -17,7 +17,7 @@ export function Main() {
                 />
             </h1>
             <h2 className={style.mainMyName}>Виталий Крянин</h2>
-            <h3 className={style.mainAbout}>Воплощаю идеи в жизнь с помощью кода!</h3>
+            <h3 className={style.mainAbout}>Воплощаю идеи в&nbsp;жизнь с&nbsp;помощью кода!</h3>
             <p className={style.mainSubtitle}>Я frontend разработчик, специализирующийся на&nbsp;создании веб-сервисов и приложений.</p>
         </section>
     )

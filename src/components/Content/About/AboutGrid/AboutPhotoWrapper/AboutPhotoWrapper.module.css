@@ -60,3 +60,9 @@
   background-color: transparent;
   opacity: 0;
 }
+
+@media (max-width: 480px) {
+  .aboutSpan {
+    opacity: 0;
+  }
+}

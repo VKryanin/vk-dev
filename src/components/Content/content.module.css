@@ -11,3 +11,9 @@ section {
     padding: 100px 0px;
     max-width: 1000px;
 }
+
+@media (max-width: 480px) {
+    .content {
+        padding: 0px 25px;
+    }
+}

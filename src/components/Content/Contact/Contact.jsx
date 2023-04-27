@@ -16,7 +16,7 @@ export function Contact() {
     return (
         <section className={style.contact} id='contact' data-aos="fade-up">
             <h2 className={style.contactHeader}>Что дальше?</h2>
-            <h2 className={style.contactTitle}>Связаться со мной</h2>
+            <h2 className={style.contactTitle}>Связаться со&nbsp;мной</h2>
             <p className={style.contactSubtitle}>
                 Сейчас я открыт, для  новых возможностей.
                 Если у Вас есть вопросы или просто хотите сказать "Привет",

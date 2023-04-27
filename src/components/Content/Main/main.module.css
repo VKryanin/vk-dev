@@ -66,3 +66,19 @@
 .hidden {
     opacity: 0;
 }
+
+@media (max-width: 1200px) {
+    .mainAbout {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainAbout {
+        text-align: justify;
+    }
+    .mainSubtitle {
+        text-align: center;
+        font-size: 18px;
+    }
+}

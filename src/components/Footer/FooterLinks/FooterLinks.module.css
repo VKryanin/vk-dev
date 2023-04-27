@@ -1,0 +1,13 @@
+.footerLinks {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .footerLinks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

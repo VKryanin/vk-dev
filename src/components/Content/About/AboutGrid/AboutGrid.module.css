@@ -1,0 +1,30 @@
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+
+.wrapper {
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #64ffda;
+}
+
+
+@media (max-width: 768px) {
+    .aboutGrid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+

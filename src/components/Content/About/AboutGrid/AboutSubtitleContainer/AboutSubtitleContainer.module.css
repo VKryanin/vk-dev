@@ -1,0 +1,77 @@
+.aboutSubtitleContainer {
+    position: relative;
+}
+
+.aboutSubtitle {
+    position: relative;
+    margin: 0 0 15px 0;
+    text-align: start;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.aboutSubtitle span {
+    color: #64ffda;
+    cursor: pointer;
+}
+
+.hideImage,
+.showImage {
+    width: 150px;
+    border-radius: 4px;
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 65%;
+    right: 45%;
+}
+
+.hideImage {
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.showImage {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+
+.aboutListWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.aboutList {
+    padding: 0;
+    margin: 0;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.aboutItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aboutItem::before {
+    content: "▹";
+    padding-right: 5px;
+    color: #64ffda;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+@media (max-width: 480px) {
+    .aboutSubtitle {
+        font-size: 15px;
+    }
+
+    .aboutItem {
+        font-size: 15px;
+    }
+}

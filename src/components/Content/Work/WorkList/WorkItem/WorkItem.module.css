@@ -1,0 +1,208 @@
+.workItem {
+    position: relative;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.workLink {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 4px;
+}
+
+.workImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.workBlur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background-color: #64ffda;
+    transition: opacity .5s ease;
+    border-radius: 4px;
+}
+
+.workBlur:hover {
+    opacity: 0;
+}
+
+.workContent {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: translate(0%, -50%);
+    text-align: right;
+    max-width: 500px;
+    width: 100%;
+    z-index: 11;
+}
+
+.workDescription {
+    width: 100%;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #112240;
+    color: #a8b2d1;
+    font-size: 18px;
+}
+
+.workOverLine {
+    margin: 10px 0;
+    font-size: 13px;
+    color: #64ffda;
+    font-weight: 400;
+    font-family: 'SF Mono', monospace;
+}
+
+.workProjectName {
+    margin: 0 0 20px;
+    font-size: clamp(24px, 5vw, 28px);
+    font-weight: 600;
+    color: #ccd6f6;
+    transition: all .5s ease;
+}
+
+.workProjectName:hover {
+    color: #64ffda;
+}
+
+.workProjectName a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.workText {
+    margin: 0;
+    text-align: justify;
+    font-size: 18px;
+    color: #a8b2d1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.workTechList {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 25px 0px 10px;
+}
+
+.workTechList li {
+    margin: 0px 0px 5px 20px;
+}
+
+.workContent a {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .workBlur {
+        background-color: #112240;
+        opacity: .8;
+    }
+
+    .workContent {
+        width: 100%;
+        min-height: 100%;
+        padding: 20px;
+        top: 50%;
+    }
+
+    .workContent a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        padding: 10px;
+        margin-left: 15px;
+        text-decoration: none;
+        color: #ccd6f6;
+    }
+
+    .workOverLine {
+        text-align: left;
+    }
+
+    .workProjectName {
+        text-align: left;
+        line-height: 1;
+    }
+
+    .workDescription {
+        background-color: transparent;
+    }
+
+    .workTechList {
+        margin-top: 10px;
+        color: #ccd6f6;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .workTechList li {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .workDescription {
+        padding: 0;
+    }
+
+    .workTechList li {
+        font-size: 15px;
+    }
+
+    .workTechList li:first-of-type {
+        margin-left: 0;
+    }
+
+    .workContent a {
+        margin-left: 0;
+        padding-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 380px) {
+    .workContent {
+        padding: 5px;
+    }
+
+    .workOverLine {
+        font-size: 10px;
+    }
+
+    .workProjectName {
+        font-size: 15px;
+        line-height: .5;
+    }
+
+    .workText {
+        font-size: 15px;
+    }
+
+    .workTechList li {
+        font-size: 10px;
+    }
+
+    .workContent a {
+        width: 32px;
+    }
+
+}

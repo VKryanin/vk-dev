@@ -69,3 +69,9 @@
 .contactMail:hover {
     background-color: rgba(100, 255, 218, 0.1);
 }
+
+@media (max-width: 380px) {
+    .contactSubtitle {
+        text-align: justify;
+    }
+}

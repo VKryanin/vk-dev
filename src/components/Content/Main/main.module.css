@@ -76,6 +76,8 @@
 @media (max-width: 480px) {
     .mainAbout {
         text-align: justify;
+        letter-spacing: 1px;
+        font-size: 32px;
     }
     .mainSubtitle {
         text-align: center;

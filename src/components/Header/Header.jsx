@@ -7,9 +7,9 @@ import { BurgerMenu } from './BurgerMenu/BurgerMenu';
 export function Header({ headerClass }) {
     return (
         <header className={`${style.header} ${headerClass}`}>
-            <div className={style.headerWrapper}>
+            <a href='#main' className={style.headerWrapper}>
                 <img className={style.headerLogo} src={logo} alt="logo VK" />
-            </div>
+            </a>
             < NavBar />
             < BurgerMenu />
         </header>

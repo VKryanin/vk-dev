@@ -14,7 +14,7 @@ function App() {
         setScrollPosition(window.pageYOffset);
       }
 
-      if (scrollPosition > 20) {
+      if (scrollPosition > 20 && window.innerWidth > 768) {
         setHeaderClass('hidden');
       } else {
         setHeaderClass('');

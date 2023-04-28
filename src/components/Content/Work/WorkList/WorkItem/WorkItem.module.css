@@ -6,8 +6,36 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin-bottom: 34px;
+}
+
+.workItem:nth-of-type(2n) {
+    flex-direction: row-reverse
+}
+
+.workItem:nth-of-type(2n) .workContent {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+    z-index: 11;
+}
+
+.workItem:nth-of-type(2n) .workTechList {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 25px 0px 10px;
+}
+
+.workItem:nth-of-type(2n) .workTechList li {
+    margin: 0px 20px 5px 0px;
 }
 
 .workLink {
@@ -17,6 +45,7 @@
     max-width: 600px;
     border-radius: 4px;
 }
+
 
 .workImage {
     width: 100%;
@@ -43,7 +72,7 @@
 
 .workContent {
     position: absolute;
-    top: 30%;
+    top: 50%;
     right: 0;
     transform: translate(0%, -50%);
     text-align: right;
@@ -116,6 +145,10 @@
 }
 
 @media (max-width: 768px) {
+    .workItem {
+        margin-bottom: 25px;
+    }
+
     .workBlur {
         background-color: #112240;
         opacity: .8;
@@ -123,9 +156,21 @@
 
     .workContent {
         width: 100%;
-        min-height: 100%;
+        height: 100%;
         padding: 20px;
         top: 50%;
+    }
+
+    .workItem:nth-of-type(2n) .workContent {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        top: 50%;
+    }
+
+    .workItem:nth-of-type(2n) .workTechList {
+        padding-left: 25px;
+        margin-top: 10px;
     }
 
     .imageLink {
@@ -141,15 +186,18 @@
 
     .workOverLine {
         text-align: left;
+        margin-top: 0;
     }
 
     .workProjectName {
         text-align: left;
         line-height: 1;
+        font-size: 25px;
     }
 
     .workDescription {
         background-color: transparent;
+        padding-top: 0;
     }
 
     .workTechList {
@@ -158,6 +206,7 @@
         justify-content: flex-start;
         padding: 0;
     }
+
     .workTechList li {
         margin-left: 25px;
     }
@@ -187,6 +236,11 @@
     .workContent {
         padding: 5px;
     }
+
+    .workItem:nth-of-type(2n) .workContent {
+        padding: 5px;
+    }
+
 
     .workOverLine {
         font-size: 10px;

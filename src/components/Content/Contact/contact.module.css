@@ -10,7 +10,7 @@
 
 .contact {
     max-width: 600px;
-    margin: 0px auto 100px;
+    margin: 350px auto 100px;
     text-align: center;
 }
 
@@ -70,8 +70,15 @@
     background-color: rgba(100, 255, 218, 0.1);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 391px) {
+    .contact {
+        margin: 100px auto 100px;
+        text-align: center;
+    }
+
+
     .contactSubtitle {
         text-align: justify;
     }
 }
+

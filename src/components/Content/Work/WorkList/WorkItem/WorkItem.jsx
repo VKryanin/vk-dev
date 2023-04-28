@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './WorkItem.module.css';
-import mesto from '../../../../image/mesto.jpg'
+// import photo from '../../../../image/trains.jpg'
 
 export function WorkItem({ props }) {
     return (
@@ -9,7 +9,7 @@ export function WorkItem({ props }) {
                 rel='noopener noreferrer'
                 href={props.link}
                 target='_blank'>
-                <img className={style.workImage} src={mesto} alt="mesto" />
+                <img className={style.workImage} src={props.img} alt={props.name} />
                 <span className={style.workBlur}></span>
             </a>
             <div className={style.workContent}>
@@ -32,7 +32,10 @@ export function WorkItem({ props }) {
                     }
                     )}
                 </ul>
-                <a href={props.link} target='_blank'>
+                <a className={style.imageLink} 
+                href={props.link} 
+                target='_blank'
+                rel='noopener noreferrer'>
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-external-link">
                         <title>External Link</title>
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>

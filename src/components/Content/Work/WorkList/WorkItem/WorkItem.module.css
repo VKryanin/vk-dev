@@ -7,6 +7,7 @@
     justify-content: space-between;
     border-radius: 4px;
     box-sizing: border-box;
+    margin-bottom: 34px;
 }
 
 .workLink {
@@ -84,8 +85,10 @@
 }
 
 .workProjectName a {
+    display: block;
     text-decoration: none;
     color: inherit;
+    width: 100%;
 }
 
 .workText {
@@ -108,7 +111,7 @@
     margin: 0px 0px 5px 20px;
 }
 
-.workContent a {
+.imageLink {
     display: none;
 }
 
@@ -125,7 +128,7 @@
         top: 50%;
     }
 
-    .workContent a {
+    .imageLink {
         display: flex;
         align-items: center;
         justify-content: center;

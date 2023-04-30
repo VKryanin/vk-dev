@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a0e9a44.css",
+    "main.js": "/static/js/main.3873cfe1.js",
+    "static/js/787.f9157557.chunk.js": "/static/js/787.f9157557.chunk.js",
+    "static/media/trains.jpg": "/static/media/trains.d20ab4cb5ac9a5b79311.jpg",
+    "static/media/FiraCode-Regular.ttf": "/static/media/FiraCode-Regular.47096d33cf13b3b33cb5.ttf",
+    "static/media/photo.jpg": "/static/media/photo.d8d744d5d987703efa30.jpg",
+    "static/media/mesto.jpg": "/static/media/mesto.67b414e592e7e59fb870.jpg",
+    "static/media/SFMono-Regular.otf": "/static/media/SFMono-Regular.1d07f933cdf138950a80.otf",
+    "static/media/Rogu.jpg": "/static/media/Rogu.500688a086e0635a81e7.jpg",
+    "static/media/logo.svg": "/static/media/logo.644f22b1bd72f8c75a02e7173676e181.svg",
+    "index.html": "/index.html",
+    "main.0a0e9a44.css.map": "/static/css/main.0a0e9a44.css.map",
+    "main.3873cfe1.js.map": "/static/js/main.3873cfe1.js.map",
+    "787.f9157557.chunk.js.map": "/static/js/787.f9157557.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a0e9a44.css",
+    "static/js/main.3873cfe1.js"
+  ]
+}
